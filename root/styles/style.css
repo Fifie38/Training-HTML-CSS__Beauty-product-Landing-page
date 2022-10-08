@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Archivo bold';
+    src: url(./Archivo-Bold.ttf) format("truetype");
+
+    font-family: 'Archivo medium';
+    src: url(./Archivo-Medium.ttf) format("truetype");
+
+    font-family: 'Marcellus regular';
+    src: url(./Marcellus-Regular.ttf) format("truetype");
+}
+
+:root {
+--main-color: rgba(226, 116, 136, 1);
+/* color: var(--main-color); */
+}
+
+body {
+    padding: 3%;
+    font-family: 'Archivo medium', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    padding-bottom: 5px;
+
+}   
+
+h3 {
+    font-family: 'Archivo bold',sans-serif;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 1px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding-top: 12px;
+    margin: 0;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
+    padding-right: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 85%;
+    margin-right: 0;
+}
+
+
+h1 {
+    font-family: 'Marcellus regular', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: .05em;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+
+.main-rest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-rest h1 {
+    margin: 0;
+}
+
+button {
+    border-radius: 30px;
+}
+
+#btn1 {
+    background-color: var(--main-color);
+    padding: 3px 28px 3px 28px;
+    border: none;
+
+}
+
+#btn2 {
+    /* background-color: #fff; */
+    border: solid 1px black;
+    padding: 3px 28px 3px 28px;
+}
+
+#btn2 span:after {
+    margin-left: 25px;
+    content: url(../images/polygon.svg);
+    zoom: 30%;
+}
+
+.hero-image {
+    object-fit: contain;
+    max-width: 40%;
+    padding-left: 10px;
+}
