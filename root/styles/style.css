@@ -69,7 +69,8 @@ a {
     display: flex;
     flex-direction: row;
     max-width: 85%;
-    margin-right: 0;
+    padding-bottom: 45px;
+    border-bottom: solid 1px black;
 }
 
 
