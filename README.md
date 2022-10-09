@@ -8,7 +8,7 @@ A design inspired from  [Dribble](https://dribbble.com/shots/19425354-Beauty-blo
 Desktop screenshot:
 ![Desktop Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/desktop.PNG)
 
-Mobile screenshot
+Mobile screenshot:
 ![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg)
 
 ## Website link
