@@ -11,7 +11,12 @@
 
 :root {
 --main-color: rgba(226, 116, 136, 1);
-/* color: var(--main-color); */
+}
+
+* {
+    margin:0;
+    text-decoration: none;
+    color: black;  
 }
 
 body {
@@ -20,7 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
 }
 
 header {
@@ -31,14 +35,19 @@ header {
     border-bottom: solid 1px black;
     position: relative;
     padding-bottom: 3px;
-
 }   
 
 h3 {
     font-family: 'Archivo bold',sans-serif;
-    margin-bottom: 0;
     margin-top: 10px;
     padding-left: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
+    padding-right: 1px;
 }
 
 ul {
@@ -48,25 +57,8 @@ ul {
     list-style: none;
     width: 100%;
     padding-top: 12px;
-    margin: 0;
 }
 
-ul h5 {
-    margin:0;
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    min-width: 45%;
-    padding-right: 1px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
 
 .hero {
     margin-top: 25px;
@@ -77,7 +69,13 @@ a {
     padding-bottom: 40px;
 }
 
-.hero-right {
+.hero-image {
+    object-fit: contain;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.hero-left {
     max-width: 60%;
     display: flex;
     flex-direction: column;
@@ -90,25 +88,17 @@ h1 {
     font-size: 2.5em;
     letter-spacing: .05em;
     line-height: 1.2em;
-    margin: 0;
 }
 
-.main-rest {
+.hero-rest {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.main-rest h1 {
-    margin: 0;
-}
-
-.button {
-    border-radius: 30px;
-}
 
 
-.main-rest a {
+.hero-rest a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,26 +106,22 @@ h1 {
     width: max-content;
 }
 
-.main-rest .button {
+.hero-rest .button {
+    border-radius: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    padding: 3px 28px 3px 28px;
 }
-
 
 #btn1 {
     background-color: var(--main-color);
-    padding: 3px 28px 3px 28px;
     border: none;
-
 }
 
 #btn2 {
-    /* background-color: #fff; */
     border: solid 1.5px black;
-    padding: 3px 28px 3px 28px;
 }
 
 #btn2-aft:after {
@@ -144,11 +130,6 @@ h1 {
     zoom: 30%;
 }
 
-.hero-image {
-    object-fit: contain;
-    width: 40%;
-    margin-left: 10px;
-}
 
 .main {
     border-top: solid 1px black;
@@ -205,11 +186,11 @@ h1 {
 
 
 @media screen and (min-width:1403px) {
-    .main-rest {
+    .hero-rest {
         flex-direction: column;
     } 
 
-    .main-rest h1 {
+    .hero-rest h1 {
         margin-bottom: 25px;
     }
     #btn1 {
@@ -225,7 +206,6 @@ h1 {
 
 @media screen and (min-width:1028px)and (max-width:1402px) {
     .hero-image {
-        max-width: 40%;
         margin-left: 8%;
     }  
 }
@@ -235,7 +215,7 @@ h1 {
     .hero {
         margin-top: 35px;
     }
-    .main-rest {
+    .hero-rest {
         flex-direction: column;
     } 
     #btn1 {
@@ -250,38 +230,39 @@ h1 {
     }
 }
 @media screen and (max-width:777px){
-    h1 {
-        text-align: center;
-    }
-    .hero {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
-    .hero-right {
-        min-width: 85%;
-    }
-    .hero-image {
-        min-width: 410px;
-        margin-bottom: 25px;
+    header {
+        justify-content: flex-end;
+        padding-bottom: 7px;
     }
     h3 {
         position: absolute;
         top:0;
         left: 0;
     }
-    header {
-        justify-content: flex-end;
-        padding-bottom: 7px;
-    }
     nav {
         min-width: 75%;
     }
-    .main-rest {
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .hero-left {
+        min-width: 85%;
+    }
+    .hero-image {
+        min-width: 410px;
+        margin-bottom: 25px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .hero-rest {
         flex-direction: column;
         align-items: center;
     } 
-    .main-rest h1 {
+    .hero-rest h1 {
         margin-bottom: 20px;
     } 
     #btn1 {
@@ -291,9 +272,7 @@ h1 {
     #btn2 {
         padding: 9px 28px 9px 28px;
     }
-}
 
-@media screen and (max-width:650px) {
     .article-box {
         height: 65%;
     }
@@ -301,19 +280,21 @@ h1 {
         padding-top: 80px;
         zoom: 27%;
     }
-    
     .article2 .article-svg {
         margin-top: 140px;
         zoom: 27%;
     }
-    
     .article3 .article-svg {
         margin-top: 80px;
         zoom: 26%;
     }
 }
 
+
 @media screen and (max-width:500px){
+    body {
+        font-size: 0.8em;
+    }
     .hero {
         flex-direction: column;
         align-items: center;
@@ -321,10 +302,7 @@ h1 {
     .hero-image {
         min-width: 334px;
     }
-    body {
-        font-size: 0.8em;
-    }
-
+    
     .article-box {
         height: 45%;
     }
