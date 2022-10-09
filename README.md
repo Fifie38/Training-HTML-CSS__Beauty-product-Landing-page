@@ -11,7 +11,7 @@ Desktop screenshot:
 
 Mobile screenshot:
 
-![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg){ width: 400px; }
+<img src="(https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg" alt="mobile screenshot" width="400"/>
 
 ## Website link
 You can test it [here](https://sunny-pavlova-dea7ff.netlify.app/)
