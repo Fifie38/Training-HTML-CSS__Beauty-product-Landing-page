@@ -8,7 +8,7 @@ A design inspired from  [Dribble](https://dribbble.com/shots/19425354-Beauty-blo
 
 ![Desktop Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/desktop.PNG)
 
-![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.PNG)
+![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg)
 
 ## Website link
 You can test it [here](https://sunny-pavlova-dea7ff.netlify.app/)
