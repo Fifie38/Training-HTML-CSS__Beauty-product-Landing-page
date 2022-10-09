@@ -3,7 +3,7 @@
 A design inspired from  [Dribble](https://dribbble.com/shots/19425354-Beauty-blog-website-UCG)
 
 ## Website link
-You can test it [here](https://sunny-pavlova-dea7ff.netlify.app/)
+You can test it [here](https://storied-lokum-d1542c.netlify.app/)
 
 (Last update: V.1.3)
 
