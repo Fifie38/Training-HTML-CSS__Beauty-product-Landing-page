@@ -1,6 +1,6 @@
 
 # Training HTML CSS: Beauty product Landing page
-A design inspired from  [Dribble](https://dribbble.com/shots/19425354-Beauty-blog-website-UCG)
+A design inspired from  [Dribbble](https://dribbble.com/shots/19425354-Beauty-blog-website-UCG)
 
 ## Website link
 You can test it [here](https://storied-lokum-d1542c.netlify.app/)
