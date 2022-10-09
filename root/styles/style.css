@@ -285,6 +285,23 @@ h1 {
     }  
 }
 
+@media screen and (min-width:1403px) {
+    .main-rest {
+        flex-direction: column;
+    } 
+
+    .main-rest h1 {
+        margin-bottom: 25px;
+    }
+    #btn1 {
+        margin: 7px 0 7px 0;
+        padding: 9px 28px 9px 28px;
+        margin-bottom: 20px;
+    }
+    #btn2 {
+        padding: 9px 28px 9px 28px;
+    }
+}
 
 
 
