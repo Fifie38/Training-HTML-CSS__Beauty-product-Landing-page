@@ -11,7 +11,7 @@ Desktop screenshot:
 
 Mobile screenshot:
 
-![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg)
+![Mobile Screenshot](https://github.com/Fifie38/Training-HTML-CSS__Beauty-product-Landing-page/blob/main/design/mobile.jpg = 400x)
 
 ## Website link
 You can test it [here](https://sunny-pavlova-dea7ff.netlify.app/)
